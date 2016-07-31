@@ -6,7 +6,7 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
-    apiHost: 'http://localhost:3000',
+    API_HOST: 'http://localhost:3000',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -41,9 +41,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.baseURL = '/';
+    ENV.baseURL = '/tracker-app/';
     ENV.locationType = 'hash';
-    ENV.apiHost = '';
+    // ENV.apiHost = '/';
   }
 
   return ENV;

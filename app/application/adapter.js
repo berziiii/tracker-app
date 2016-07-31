@@ -3,9 +3,9 @@ import ActiveModelAdapter from 'active-model-adapter';
 import ENV from 'tracker-app/config/environment';
 
 export default ActiveModelAdapter.extend({
-  auth: Ember.inject.service(),
   host: ENV.apiHost,
-  
+  auth: Ember.inject.service(),
+
   headers: Ember.computed('auth.credentials.token', {
     get () {
       let headers = {};
