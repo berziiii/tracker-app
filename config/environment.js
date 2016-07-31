@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'ga-wdi-boston.tracker-app',
+    modulePrefix: 'tracker-app',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
@@ -43,7 +43,7 @@ module.exports = function(environment) {
   if (environment === 'production') {
     ENV.baseURL = '/tracker-app/';
     ENV.locationType = 'hash';
-    // ENV.apiHost = '/';
+    // ENV.API_HOST = '/';
   }
 
   return ENV;

@@ -3,7 +3,7 @@ import AjaxService from 'ember-ajax/services/ajax';
 import ENV from 'tracker-app/config/environment';
 
 export default AjaxService.extend({
-  host: ENV.apiHost,
+  host: ENV.API_HOST,
   auth: Ember.inject.service(),
   headers: Ember.computed('auth.credentials.token', {
     get () {

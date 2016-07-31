@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import TextFieldInitializer from 'ga-wdi-boston.tracker-app/initializers/text-field';
+import TextFieldInitializer from 'tracker-app/initializers/text-field';
 import { module, test } from 'qunit';
 
 let application;

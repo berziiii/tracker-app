@@ -1,7 +1,7 @@
 {
-  "name": "ga-wdi-boston.tracker-app",
+  "name": "tracker-app",
   "version": "0.0.0",
-  "description": "Small description for ga-wdi-boston.tracker-app goes here",
+  "description": "Small description for tracker-app goes here",
   "private": true,
   "directories": {
     "doc": "doc",
