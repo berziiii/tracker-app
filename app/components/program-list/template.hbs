@@ -1,0 +1,17 @@
+{{#link-to 'programs'}}Back{{/link-to}}
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Instance Name</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Market</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each program.cohorts as |cohort|}}
+      {{program-list/cohorts cohort=cohort}}
+    {{/each}}
+  </tbody>
+</table>

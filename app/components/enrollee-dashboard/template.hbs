@@ -1,0 +1,20 @@
+<h2>{{profile.first_name}}'s Dashboard:</h2>
+
+<h4>Full Name:{{profile.first_name}} {{profile.last_name}}</h4>
+<h4>Phone: {{profile.phone_number}}</h4>
+<h4>Github: {{profile.github_username}}</h4>
+
+<div class="row">
+  <div class="col-sm-3 center">
+    {{#link-to 'diagnostics' class="btn btn-info"}}Diagnostics{{/link-to}}
+  </div>
+  <div class="col-sm-3 center">
+    {{#link-to 'practices' class="btn btn-info"}}Practices{{/link-to}}
+  </div>
+  <div class="col-sm-3 center">
+    {{#link-to 'projects' class="btn btn-info"}}Projects{{/link-to}}
+  </div>
+  <div class="col-sm-3 center">
+    {{#link-to 'attendences' class="btn btn-info"}}Attendences{{/link-to}}
+  </div>
+</div>

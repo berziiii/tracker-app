@@ -13,6 +13,7 @@ export default Ember.Service.extend({
           email: credentials.email,
           password: credentials.password,
           password_confirmation: credentials.passwordConfirmation,
+          admin: credentials.admin,
         },
       },
     });
@@ -30,6 +31,7 @@ export default Ember.Service.extend({
     .then((result) => {
       this.get('credentials').set('id', result.user.id);
       this.get('credentials').set('email', result.user.email);
+      this.get('credentials').set('admin', result.user.admin);
       this.get('credentials').set('token', result.user.token);
     });
   },
