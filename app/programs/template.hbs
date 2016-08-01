@@ -1,5 +1,6 @@
 <div class="center">
   <h2> Program Dashboard </h2>
+  {{#link-to 'new-program' class="btn btn-primary"}}Add Program{{/link-to}}
 
   {{#each model as |program|}}
     {{programs-list program=program}}

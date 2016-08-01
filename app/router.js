@@ -20,6 +20,7 @@ Router.map(function () {
   this.route('practices');
   this.route('projects');
   this.route('attendences');
+  this.route('new-program');
 });
 
 export default Router;

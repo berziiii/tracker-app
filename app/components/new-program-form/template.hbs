@@ -1,0 +1,13 @@
+<label for="title">Title of Program</label>
+{{input type="text"
+        class="form-control"
+        id="title"
+        value=program.title}}
+
+<button type="submit" class="btn btn-primary" {{action "createProgram"}}>
+  New Program
+</button>
+
+<button class="btn btn-default" {{action "goToPrograms"}}>
+  Cancel
+</button>
