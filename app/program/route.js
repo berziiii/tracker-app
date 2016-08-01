@@ -6,4 +6,10 @@ export default Ember.Route.extend({
     return this.get('store').findRecord('program', params.id);
   },
 
+  actions: {
+    goToPrograms () {
+      this.transitionTo('programs');
+    }
+  },
+
 });

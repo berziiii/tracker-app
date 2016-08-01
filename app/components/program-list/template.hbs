@@ -1,4 +1,5 @@
-{{#link-to 'programs'}}Back{{/link-to}}
+{{#link-to 'programs' class="btn btn-default"}}Back{{/link-to}}
+<button class="btn btn-danger" {{action "deleteProgram"}}>Delete {{program.title}}</button>
 <table class="table table-striped">
   <thead>
     <tr>
