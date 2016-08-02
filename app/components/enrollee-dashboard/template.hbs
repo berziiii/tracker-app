@@ -6,15 +6,28 @@
 
 <div class="row">
   <div class="col-sm-3 center">
-    {{#link-to 'diagnostics' class="btn btn-info"}}Diagnostics{{/link-to}}
+    {{#link-to 'diagnostics' class="btn btn-info"}}Add Diagnostic{{/link-to}}
+    <h4 class="center">Diagnostics</h4>
   </div>
   <div class="col-sm-3 center">
-    {{#link-to 'practices' class="btn btn-info"}}Practices{{/link-to}}
+    {{#link-to 'practices' class="btn btn-info"}}Add Practice{{/link-to}}
+    <h4 class="center">Practices</h4>
   </div>
   <div class="col-sm-3 center">
-    {{#link-to 'projects' class="btn btn-info"}}Projects{{/link-to}}
+    {{#link-to 'projects' class="btn btn-info"}}Add Project{{/link-to}}
+    <h4 class="center">Projects</h4>
   </div>
   <div class="col-sm-3 center">
-    {{#link-to 'attendences' class="btn btn-info"}}Attendences{{/link-to}}
+    {{#link-to 'attendences' class="btn btn-info"}}Add Attendence{{/link-to}}
+    <h4 class="center">Attendences</h4>
+    {{#if profile.attendences}}
+      {{#each profile.attendences as |attendence|}}
+        <h4>{{attendence.option}}</h4>
+        <h4>{{attendence.day}}</h4>
+        <h4>{{attendence.note}}</h4>
+      {{/each}}
+    {{else}}
+      <h4> You have no absences! Great Work! </h4>
+    {{/if}}
   </div>
 </div>

@@ -11,4 +11,5 @@ export default Model.extend({
   github_username: attr('string'),
   user: belongsTo('user'),
   cohorts: hasMany('cohort'),
+  attendences: hasMany('attendence'),
 });

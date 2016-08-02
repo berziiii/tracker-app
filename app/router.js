@@ -21,6 +21,7 @@ Router.map(function () {
   this.route('projects');
   this.route('attendences');
   this.route('new-program');
+  this.route('attendence', { path: '/attendences/:id' });
 });
 
 export default Router;
