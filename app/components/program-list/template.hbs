@@ -1,5 +1,6 @@
 {{#link-to 'programs' class="btn btn-default"}}Back{{/link-to}}
 <button class="btn btn-danger right" {{action "deleteProgram"}}>Delete {{program.title}}</button>
+{{#link-to 'new-cohort' program class="btn btn-success"}}Add Cohort{{/link-to}}
 <table class="table table-striped">
   <thead>
     <tr>

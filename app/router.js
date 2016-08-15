@@ -22,6 +22,7 @@ Router.map(function () {
   this.route('attendences');
   this.route('new-program');
   this.route('attendence', { path: '/attendences/:id' });
+  this.route('new-cohort', { path: '/new-cohort/:id' });
 });
 
 export default Router;

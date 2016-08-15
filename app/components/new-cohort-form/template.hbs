@@ -1,0 +1,28 @@
+<h2> Add cohort to {{program.title}} </h2>
+
+<label>Instance # of Cohort:</label>
+{{input type="text"
+        id="title"
+        placeholder="Instance # of Cohort"
+        value=cohort.title}}
+
+<label>Start Date of Cohort:</label>
+{{input type="date"
+        id="state_date"
+        value=cohort.start_date}}
+
+<label>End Date of Cohort:</label>
+{{input type="date"
+        id="end_date"
+        value=cohort.end_date}}
+
+<label>Market of Cohort:</label>
+{{input type="text"
+        id="market"
+        value=cohort.market}}
+
+<button class="btn btn-primary" {{action "create"}}>
+  Add Cohort
+</button>
+
+{{#link-to 'program' program}}Back{{/link-to}}
