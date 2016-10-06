@@ -13,8 +13,8 @@ Router.map(function () {
   this.route('programs');
   this.route('cohort', { path: '/cohorts/:id' });
   this.route('enrollment');
-  this.route('profiles');
   this.route('profile', { path: '/profiles/:id' });
+  this.route('profiles');
   this.route('enrollments');
   this.route('diagnostics');
   this.route('practices');
@@ -23,6 +23,7 @@ Router.map(function () {
   this.route('new-program');
   this.route('attendence', { path: '/attendences/:id' });
   this.route('new-cohort', { path: '/new-cohort/:id' });
+  this.route('edit-profile');
 });
 
 export default Router;

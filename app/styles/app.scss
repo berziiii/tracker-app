@@ -12,3 +12,32 @@ th {
 .right {
   float: right;
 }
+
+// nav
+
+.nav > .responsive-nav-item {
+  display: none;
+}
+
+// .dropdown-menu {
+//   display: block;
+// }
+
+.glyphicon {
+  font-size: 24px;
+}
+
+
+// media
+
+@media screen and (max-width: 767px) {
+  .nav > .responsive-nav-item {
+    display: block;
+  }
+
+  .dropdown-menu,
+  .glyphicon-cog,
+  #account-button {
+    display: none;
+  }
+}

@@ -8,11 +8,33 @@
           {{#if isAdmin}}
             <li>{{#link-to "programs"}}Programs{{/link-to}}</li>
             <li>{{#link-to "sign-up"}}Add Account{{/link-to}}</li>
-            <li>{{#link-to "change-password"}}Change Password{{/link-to}}</li>
-            <li><a href="#" {{action "signOut"}}>Sign Out</a></li>
+            <li id="account-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a href="#">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+            </li>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li>{{#link-to "edit-profile"}}Edit Profile{{/link-to}}</li>
+              <li>{{#link-to "change-password"}}Change Password{{/link-to}}</li>
+              <li><a href="#" {{action "signOut"}}>Sign Out</a></li>
+            </ul>
+            <li class="responsive-nav-item">{{#link-to "edit-profile"}}Edit Profile{{/link-to}}</li>
+            <li class="responsive-nav-item">{{#link-to "change-password"}}Change Password{{/link-to}}</li>
+            <li class="responsive-nav-item"><a href="#" {{action "signOut"}}>Sign Out</a></li>
           {{else}}
-            <li>{{#link-to "change-password"}}Change Password{{/link-to}}</li>
-            <li><a href="#" {{action "signOut"}}>Sign Out</a></li>
+            <li id="account-button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a href="#">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+            </li>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li>{{#link-to "edit-profile"}}Edit Profile{{/link-to}}</li>
+              <li>{{#link-to "change-password"}}Change Password{{/link-to}}</li>
+              <li><a href="#" {{action "signOut"}}>Sign Out</a></li>
+            </ul>
+            <li class="responsive-nav-item">{{#link-to "edit-profile"}}Edit Profile{{/link-to}}</li>
+            <li class="responsive-nav-item">{{#link-to "change-password"}}Change Password{{/link-to}}</li>
+            <li class="responsive-nav-item"><a href="#" {{action "signOut"}}>Sign Out</a></li>
           {{/if}}
         {{else}}
           <li>{{#link-to "sign-in"}}Sign In{{/link-to}}</li>

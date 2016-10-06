@@ -11,4 +11,5 @@ export default Ember.Component.extend({
   toggle: 'collapse',
   target: '#navigation',
   expanded: false,
+
 });
