@@ -6,19 +6,27 @@
 
 <div class="row">
   <div class="col-sm-3 center">
-    {{#link-to 'diagnostics' class="btn btn-info"}}Add Diagnostic{{/link-to}}
+    {{#if admin}}
+      {{#link-to 'diagnostics' class="btn btn-info"}}Add Diagnostic{{/link-to}}
+    {{/if}}
     <h4 class="center">Diagnostics</h4>
   </div>
   <div class="col-sm-3 center">
-    {{#link-to 'practices' class="btn btn-info"}}Add Practice{{/link-to}}
+    {{#if admin}}
+      {{#link-to 'practices' class="btn btn-info"}}Add Practice{{/link-to}}
+    {{/if}}
     <h4 class="center">Practices</h4>
   </div>
   <div class="col-sm-3 center">
-    {{#link-to 'projects' class="btn btn-info"}}Add Project{{/link-to}}
+    {{#if admin}}
+      {{#link-to 'projects' class="btn btn-info"}}Add Project{{/link-to}}
+    {{/if}}
     <h4 class="center">Projects</h4>
   </div>
   <div class="col-sm-3 center">
-    {{#link-to 'attendences' class="btn btn-info"}}Add Attendence{{/link-to}}
+    {{#if admin}}
+      {{#link-to 'attendences' class="btn btn-info"}}Add Attendence{{/link-to}}
+    {{/if}}
     <h4 class="center">Attendences</h4>
     {{#if profile.attendences}}
       {{#each profile.attendences as |attendence|}}
